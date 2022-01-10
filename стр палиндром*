@@ -1,0 +1,11 @@
+str = input()
+cnt=0
+str1 = str[0:len(str)//2]
+str2 = str[len(str) - len(str)//2: len(str) ]
+for i in range(len(str1)):
+    if str1[i]==str2[i]:
+        cnt+=1
+if cnt == len(str1):
+    print("YES")
+else:
+    print("NO")
