@@ -1,0 +1,4 @@
+a=input()
+a=input()
+a=[int(s) for s in input().split()]
+print(min(a))
