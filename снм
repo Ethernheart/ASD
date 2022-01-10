@@ -2,9 +2,9 @@ str1=set(input().split())
 str2=set(input().split())
 strtest=set()
 if strtest==(str1-str2)|(str2-str1):
-print('NULL')
+  print('NULL')
 else:
-str3=list((str1-str2)|(str2-str1))
-str3.sort()
+  str3=list((str1-str2)|(str2-str1))
+  str3.sort()
 for i in range(len(str3)):
-print(str3[i], end=' ')
+  print(str3[i], end=' ')
