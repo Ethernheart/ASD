@@ -1,0 +1,11 @@
+sped = input()
+k=int(input())
+m = 0
+if sped[5] == 'M':
+    m = int((sped[3] * 10 + sped[4])) * 2
+elif sped[5] == 'K':
+    m = int(sped[3]*10 + sped[4])
+if m <=k:
+    print('YES')
+else:
+    print('NO')
