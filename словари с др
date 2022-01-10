@@ -1,0 +1,25 @@
+dayB = {
+'январь': [],
+'февраль': [],
+'март': [],
+'апрель': [],
+'май': [],
+'июнь': [],
+'июль': [],
+'август': [],
+'сентябрь': [],
+'октябрь': [],
+'ноябрь': [],
+'декабрь': [],
+}
+for i in range(int(input())):
+    name, date, month = input().split()
+    dayB[month] += [[name, date]]
+for i in range(int(input())):
+    month = input()
+    if len(dayB[month]) > 0:
+        for j in dayB[month]:
+            print(f'{j[0]}:{j[1]}', end=' ')
+            print()
+    else:
+        print(':(')
