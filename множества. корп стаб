@@ -1,9 +1,9 @@
 a=[]
 b=[]
 for i in range(3):
-a.append(input())
+  a.append(input())
 for i in range(4):
-b.append(input())
+  b.append(input())
 wk1=set(a)
 wk2=set(b)
 print(len(wk1 & wk2))
