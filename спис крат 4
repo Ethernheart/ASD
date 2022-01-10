@@ -1,0 +1,1 @@
+print('\n'.join(str(sum(i % 4 == 0 for i in map(int, input().split()))) for _ in range(4)))
