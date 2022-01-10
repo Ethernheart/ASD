@@ -1,0 +1,6 @@
+x=input()
+s=""
+for i in range(len(x)):
+    if(i%5!=0):
+        s+=x[i]
+print(s)
