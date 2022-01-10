@@ -1,0 +1,27 @@
+n = int(input())
+mn = set()
+txt = [input() for i in range(n)]
+for i in range(n):
+    txt[i] = txt[i].replace(',',' ')
+    txt[i] = txt[i].replace('.',' ')
+    txt[i] = txt[i].replace('-',' ')
+    txt[i] = txt[i].replace('...',' ')
+    txt[i] = txt[i].replace('"',' ')
+    txt[i] = txt[i].replace('!',' ')
+    txt[i] = txt[i].replace('?',' ')
+    txt[i] = txt[i].replace(';',' ')
+    txt[i] = txt[i].replace(':',' ')
+    
+for i in range(n):
+    txt[i] = txt[i].split()
+for i in range(n):
+    for j in range(len(txt[i])):
+        txt[i][j]=len(txt[i][j])
+for i in range(n):
+    for j in range(len(txt[i])):
+        mn.add(txt[i][j])
+mn = list(mn)
+mn = sorted(mn)
+for i in range(len(mn)):
+    print(mn[i], end=' ')
+
