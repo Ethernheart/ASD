@@ -1,0 +1,5 @@
+r = float(input())
+c = float(input())
+n = int(input())
+r = r + c/100
+print(int(r*n))
