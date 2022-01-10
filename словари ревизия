@@ -1,0 +1,16 @@
+slovar = {}
+
+N = int(input())
+
+for i in range(N):
+    b, c = input().split()
+    slovar[b] = c
+    slovar[c] = b
+
+Q = int(input())
+
+for i in range(Q):
+    try:
+        print(slovar[input()])
+    except KeyError:
+        print("Товар отсутствует")
