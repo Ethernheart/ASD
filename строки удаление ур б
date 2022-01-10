@@ -1,0 +1,3 @@
+text = input()
+idx = text.lower().rfind('б')
+print(text[:idx].replace("б","").replace("Б","") + text[idx:])
